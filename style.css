@@ -30,6 +30,13 @@ p{
   color: #465b52;
   margin: 15px 0 20px 0;
 }
+:root{
+  --bg-color: #fff;
+  --snd-bg-color:#d5fdf9;
+  --text-color: #000;
+  --main-color: #088178;
+
+}
 .section-p1{
   padding: 40px 80px;
 }
@@ -53,6 +60,31 @@ body{
   left: 0;
 
 }
+ 
+  .logo img{
+    width: 25vw;
+    cursor: pointer;
+    animation: floatImage 4s ease-in-out infinite;
+    transition: 0.4s ease ;
+   
+  }
+  .logo img:hover{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 35px var(--main-color),
+                0 0 45px var(--main-color);
+
+  }
+  @keyframes floatImage {
+    0%{
+      transform: translateX(0);
+    }
+    50%{
+      transform: translateX(10rem);
+    }
+    100%{
+      transform: translateX(0);
+    }
+  }
 #navbar{
   display: flex;
   align-items: center;
